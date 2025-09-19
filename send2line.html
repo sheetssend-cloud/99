@@ -1,0 +1,10 @@
+<!doctype html><meta charset="utf-8">
+<button id="btn" style="background:#06c755;color:#fff;padding:10px 16px;border:0;border-radius:8px;font-weight:700;cursor:pointer">
+  ส่งลิงก์สินค้านี้ให้แอดมิน (LINE)
+</button>
+<script>
+  var OA='@opensheets';
+  var msg='สวัสดีค่ะ สนใจสินค้านี้ค่ะ ' + (document.referrer || location.href);
+  var url='https://line.me/R/oaMessage/'+encodeURIComponent(OA)+'/?' + encodeURIComponent(msg);
+  document.getElementById('btn').onclick=function(){ top.location.href = url; };
+</script>
